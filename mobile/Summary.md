@@ -2,6 +2,11 @@
 
 * 没有hack（如：用_开头的属性可以区别ie6，在mobile上没有这些东西）
 * -webkit-box 运用广泛
+* -webkit-appearance: none; 用于清除各种默认的浏览器样式，主要用在表单元素的样式上面
+* border-radius,box-sizing,box-shadow,-webkit-gradient,tranform 等支持良好，参见www.caniuse.com
+* -webkit-tap-highlight-color: rgba(255,255,255,0); 用于清除默认的点击反馈样式
+* -webkit-text-size-adjust: none; 禁止浏览器自动配置字体大小
+* http://cubic-bezier.com 贝塞尔曲线
 
 ##html标签的覆盖情况
 
