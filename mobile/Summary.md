@@ -10,9 +10,6 @@
 
 ##html标签的覆盖情况
 
-	* <input type="file">
-	* <input type="file" multiple>
-
 ###meta标签
 * [viewport](http://dev.w3.org/csswg/css-device-adapt/)
 * `<meta content="yes" name="apple-mobile-web-app-capable" />`该属性添加以后，如果把图标添加到主屏幕，点击打开以后将全屏显示，而不显示浏览器地址栏等周边按钮
