@@ -7,6 +7,7 @@
 * -webkit-tap-highlight-color: rgba(255,255,255,0); 用于清除默认的点击反馈样式
 * -webkit-text-size-adjust: none; 禁止浏览器自动配置字体大小
 * http://cubic-bezier.com 贝塞尔曲线
+* REM设置字体大小
 
 ##html标签的覆盖情况
 
@@ -20,19 +21,24 @@
 ###href属性
 
 * 特殊的url协议：tel:18758052819
-* http://developer.apple.com/library/safari/#featuredarticles/iPhoneURLScheme_Reference/Introduction/Introduction.html 
-* http://stackoverflow.com/questions/433907/how-to-link-to-apps-on-the-app-store
+* <http://developer.apple.com/library/safari/#featuredarticles/iPhoneURLScheme_Reference/Introduction/Introduction.html>
+* <http://stackoverflow.com/questions/433907/how-to-link-to-apps-on-the-app-store>
 
 ##javascript上的特性
 
+### 选择器
 * querySelector，querySelectorAll
 
 ### touch事件
 * touchstart、touchmove、touchend、touchecancel
 
 ##调试
-* http://www.atatech.org/article/detail/8966/0?key=4f6c04845893a9f752f8ae5cdfbabf39&replay_id=8093
+* <http://www.atatech.org/article/detail/8966/0?key=4f6c04845893a9f752f8ae5cdfbabf39&replay_id=8093>
 * android上的console开启方法是：在地址栏输入 about:debug 进入。	
  
 ##各种bug收集
-* https://github.com/Araw/MobileWeb-Dev-Wiki
+* <https://github.com/Araw/MobileWeb-Dev-Wiki>
+
+## 其他资料
+* <https://github.com/jtyjty99999/mobileTech>
+
