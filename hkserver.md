@@ -15,16 +15,31 @@
 
 ### 安装apache + php + mysql
 * yum install httpd mod_ssl
-* yum install php mod_fcgid
+* yum install php
 * yum install mysql mysql-server php-mysql
 * chkconfig --list httpd 启动状态查看
 * chkconfig --levels 235 mysqld on
 * <?php phpinfo();?>
 * apache 报错
+	
 	```
 	Starting httpd: httpd: apr_sockaddr_info_get() failed for MyCloudServer
 	httpd: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
 	```
+
+* conf里面添加 ServerName localhost 
+
+#### apache
+* Include conf.d/vhost/ 配置虚拟主机
+* apachectl configtest
+* 修复log路径
+
+#### php
+* 配置fastcgi，yum install mod_fcgid (yum install epel-release 先要安装这个)
+* 生成php-fcgi-scripts文件夹
+* 里面涉及很多目录问题，不要改路径
+
+
 
 #### mysql
 * 备份文件中可以查看使用的mysql版本，以及phpmyadmin和php的版本
@@ -47,6 +62,9 @@
 
 ### 安装memcached
 * yum install memcached
+* yum install -y php-pecl-memcache (centos 需要安装这个)
 * service memcached start
 * vim /etc/sysconfig/memcached
+* Locate the value for OPTIONS and change it to localhost or 127.0.0.1
+* netstat -ntlp 列出端口号
 
